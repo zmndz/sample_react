@@ -1,0 +1,38 @@
+.reviews-container {
+    // display: flex;
+    // margin-bottom: 0.1rem;
+}
+
+.reviews-flex-wrapper {
+    display: flex;
+}
+
+.reviews-icon__png {
+    height: 100px;
+    width: auto;
+}
+
+
+
+.reviews-desc {
+    line-height: 0.2rem;
+    font-size: 12px;
+    color: rgb(175, 172, 172);
+    padding: 10px;
+}
+
+.reviews-desc__title {
+    font-size: 24px;
+    line-height: 1rem;
+}
+
+.reviews-desc__title:hover {
+    text-decoration: none;
+}
+
+.reviews-desc__dev {
+    font-size: 16px;
+    line-height: 1rem;
+    color: rgb(131, 130, 130);
+
+}

@@ -1,0 +1,20 @@
+.Input-button__home {
+    margin: 30px;
+    border-radius: 2px;
+    background: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    color: #757575;
+    cursor: default;
+    font-size: 20px;
+    padding: 20px 70px 20px 70px;
+    border-radius: 5px;
+}
+
+.Input-button__home:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    color: #222;
+    cursor: pointer;
+}

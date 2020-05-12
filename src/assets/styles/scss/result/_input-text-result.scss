@@ -1,0 +1,60 @@
+.Input-text__result {
+  height: 50px;
+  display: block;
+  // margin: 0 auto;
+  padding: 20px 20px;
+  margin: 40px 20px 0px 0px;
+  // margin: inherit;
+  color: inherit;
+  // width: 50rem;
+  width: inherit;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: inherit;
+  line-height: var(--inputLineHeight);
+  border: 1px solid rgb(231, 231, 231);
+  transition: box-shadow var(--transitionDuration);
+  outline: none;
+  box-shadow: 0rem 0.1rem 0.2rem var(--colorPrimary600);
+  border-radius: 5px;
+}
+
+.Input-text__result:hover {
+  outline: none;
+  box-shadow: 0rem 0.3rem 0.5rem var(--colorPrimary600);
+}
+
+// .Input-label__result {
+//     display: block;
+//     position: absolute;
+//     bottom: 50%;
+//     left: 1rem;
+//     color: #311B92;
+//     font-family: inherit;
+//     font-size: var(--inputFontSize);
+//     font-weight: inherit;
+//     line-height: var(--inputLineHeight);
+//     opacity: 0;
+//     transform: translate3d(0, var(--labelDefaultPosY), 0) scale(1);
+//     transform-origin: 0 0;
+//     transition: opacity var(--inputTransitionDuration) var(--inputTransitionTF),
+//     transform var(--inputTransitionDuration) var(--inputTransitionTF),
+//     visibility 0ms var(--inputTransitionDuration) var(--inputTransitionTF),
+//     z-index 0ms var(--inputTransitionDuration) var(--inputTransitionTF);
+// }
+
+.Input-text__result:placeholder-shown + .Input-label {
+  visibility: hidden;
+  z-index: -1;
+}
+
+.Input-text__result:not(:placeholder-shown) + .Input-label,
+.Input-text__result:focus:not(:placeholder-shown) + .Input-label {
+  visibility: visible;
+  z-index: 1;
+  opacity: 1;
+  transform: translate3d(0, var(--labelTransformedPosY), 0)
+    scale(var(--labelScaleFactor));
+  transition: transform var(--inputTransitionDuration), visibility 0ms,
+    z-index 0ms;
+}

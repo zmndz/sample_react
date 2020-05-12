@@ -1,0 +1,24 @@
+.search-tabs {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 6rem 0 0;
+    overflow: hidden;
+    width: 1000px;
+}
+
+.search-tabs__items {
+    float: right;
+}
+
+.search-tabs__links {
+    display: block;
+    padding: 0px 20px 15px 20px;
+    // background-color: #dddddd;
+    text-decoration: none;
+    color: rgb(136, 133, 133);
+}
+
+.search-tabs__links:hover {
+    text-decoration: none;
+    color: rgb(114, 113, 113);
+}
